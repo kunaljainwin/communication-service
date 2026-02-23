@@ -1,0 +1,29 @@
+resources:
+  repositories:
+    - repository: ci_templates
+      type: git
+      name: Kunal Cloud/ci-templates
+      ref: refs/heads/main
+
+variables:
+  - name: COMMS_SERVICE_IMAGE_NAME
+    value: "comms-service"
+  - name: ROOT_FILE_NAME
+    value: "./"
+
+pool:
+  name: "Kunal Cloud"
+
+trigger:
+  branches:
+    include:
+      - main
+
+extends:
+  template: mono-repo-template.yml@ci_templates
+  parameters:
+    imageName: $(COMMS_SERVICE_IMAGE_NAME)
+    rootFileName: $(ROOT_FILE_NAME)
+    projectType: maven
+    dockerfilePath: Dockerfile
+    buildContext: ./
