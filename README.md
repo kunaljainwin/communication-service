@@ -1,6 +1,4 @@
-Here is a **clean, professional README.md** you can directly use for your repository.
 
----
 
 # Comms Service
 
@@ -271,13 +269,3 @@ Add your license here.
 Add team or owner information here.
 
 ---
-
-If you want, I can also:
-
-* Add **API request/response examples**
-* Generate an **architecture sequence diagram**
-* Create a **Docker Compose file**
-* Create a **production-ready README with badges and versioning**
-* Add a **Swagger/OpenAPI documentation section**
-
-Tell me which version you prefer: lightweight, enterprise-ready, or architecture-focused.
